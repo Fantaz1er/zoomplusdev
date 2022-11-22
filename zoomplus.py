@@ -50,125 +50,43 @@ class ZoomPlusTech:
         with open(rf'{self.assets_tmp}\lessons.json', 'a') as _file:
             return dump(data_update, _file, indent=4)
 
+    @property
     def read_data_conf(self):
         with open(self.assets_tmp + r'\data.json', 'r') as _file:
             return load(_file)
 
-    def open_url_conf(self, index_conf: int): return webbrowser.open(self.get_url_conf(index_conf=index_conf))
+    def open_url_conf(self, index_conf: int):
+        return webbrowser.open(self.get_url_conf(index_conf=index_conf))
 
     def get_name_conf(self, index_conf: int):
-        data_read = self.read_data_conf()
+        data_read = self.read_data_conf
         return data_read[index_conf]['name_conf']
 
-    def get_url_conf(self, index_conf: int): return self.read_data_conf()[index_conf]['url']
+    def get_url_conf(self, index_conf: int):
+        return self.read_data_conf[index_conf]['url']
 
-    def set_name_conf_0(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[0]['name_conf'] = string
-        self.create_data(data_update=data_read)
+    for i in range(10):
+        exec(f"""def set_name_conf_{i}(self, string: str):
+    data_read = self.read_data_conf()
+    data_read[{i}]['name_conf'] = string
+    self.create_data(data_update=data_read)""")
 
-    def set_name_conf_1(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[1]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_2(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[2]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_3(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[3]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_4(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[4]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_5(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[5]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_6(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[6]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_7(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[7]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_8(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[8]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_name_conf_9(self, string: str):
-        data_read = self.read_data_conf()
-        data_read[9]['name_conf'] = string
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_0(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[0]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_1(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[1]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_2(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[2]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_3(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[3]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_4(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[4]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_5(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[5]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_6(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[6]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_7(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[7]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_8(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[8]['url'] = url
-        self.create_data(data_update=data_read)
-
-    def set_url_conf_9(self, url: str):
-        data_read = self.read_data_conf()
-        data_read[9]['url'] = url
-        self.create_data(data_update=data_read)
+    for i in range(10):
+        exec(f"""def set_url_conf_{i}(self, url: str):
+    data_read = self.read_data_conf
+    data_read[{i}]['url'] = url
+    self.create_data(data_update=data_read)""")
 
     @staticmethod
-    def get_name_lesson(name: str) -> str: return name
+    def get_name_lesson(name: str) -> str:
+        return name
 
     @staticmethod
-    def get_url_lesson(url: str) -> str: return url
+    def get_url_lesson(url: str) -> str:
+        return url
 
-    def create_lesson(self, name: str, url: str): self.create_lesson_data(data_update={'conf': name, 'url': url})
+    def create_lesson(self, name: str, url: str):
+        self.create_lesson_data(data_update={'conf': name, 'url': url})
 
 
 if __name__ == "__main__":
