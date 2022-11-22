@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>UiCreateLessonsWindow</class>
+    <widget class="QMainWindow" name="UiCreateLessonsWindow">
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>240</width>
+                <height>320</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>32</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>240</width>
+                <height>320</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>240</width>
+                <height>320</height>
+            </size>
+        </property>
+        <property name="baseSize">
+            <size>
+                <width>0</width>
+                <height>0</height>
+            </size>
+        </property>
+        <property name="font">
+            <font>
+                <family>Comic Sans MS</family>
+            </font>
+        </property>
+        <property name="cursor">
+            <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="windowTitle">
+            <string>Создать свой урок</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">QMainWindow {background-color: #555}</string>
+        </property>
+        <property name="locale">
+            <locale language="Russian" country="Russia"/>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLineEdit" name="lineEdit">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>60</y>
+                        <width>110</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>0</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QLineEdit {border-radius: 10px; color: white; background-color: #4CAF50;
+                        font-family: Comic Sans MS, sans-serif; font: bold}
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>275</y>
+                        <width>75</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>1</width>
+                        <height>3</height>
+                    </size>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>16777215</width>
+                        <height>16777208</height>
+                    </size>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif ;background-color:
+                        #4CAF50}
+                        QPushButton:hover{background-color: #fff; color: #000}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Создать</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_1">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>150</y>
+                        <width>113</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QLineEdit {border-radius: 10px; color: white; background-color: #4CAF50;
+                        font-family: Comic Sans MS, sans-serif; font: bold}
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_1">
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>90</x>
+                        <y>125</y>
+                        <width>45</width>
+                        <height>10</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QLabel {color: white; font-family: Comic Sans MS, sans-serif; font: bold}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Ссылка:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>65</x>
+                        <y>36</y>
+                        <width>105</width>
+                        <height>10</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QLabel {color: white; font-family: Comic Sans MS, sans-serif; font: bold}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Название предмета:</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>240</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

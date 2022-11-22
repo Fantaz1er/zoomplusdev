@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ZoomPlus</class>
+    <widget class="QMainWindow" name="ZoomPlus">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>250</width>
+                <height>435</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>250</width>
+                <height>435</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>250</width>
+                <height>435</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">QMainWindow {background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                stop:0.210227 rgba(253,187,45,1), stop:1 rgba(195,34,34,1));}
+            </string>
+        </property>
+        <widget class="QWidget" name="ZoomPlus_2">
+            <property name="maximumSize">
+                <size>
+                    <width>16777214</width>
+                    <height>16777215</height>
+                </size>
+            </property>
+            <widget class="QPushButton" name="pushButton">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>10</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Математика</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_2">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>50</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Русский яз. (+)</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_3">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>90</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Английский яз.</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_4">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>130</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Информатика</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_5">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>170</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Физика (+)</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_6">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>210</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>История (+)</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_7">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>250</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Физ-ра (+)</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_8">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>370</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>Химия</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_9">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>330</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>ИП</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_10">
+                <property name="geometry">
+                    <rect>
+                        <x>80</x>
+                        <y>290</y>
+                        <width>100</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
+                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
+                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    </string>
+                </property>
+                <property name="text">
+                    <string>География</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>250</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuEdit">
+                <property name="title">
+                    <string>Настройки</string>
+                </property>
+                <addaction name="action"/>
+                <addaction name="action_2"/>
+            </widget>
+            <widget class="QMenu" name="menu">
+                <property name="title">
+                    <string>Создать</string>
+                </property>
+                <addaction name="action_4"/>
+            </widget>
+            <addaction name="menuEdit"/>
+            <addaction name="menu"/>
+        </widget>
+        <action name="actionOPen">
+            <property name="text">
+                <string>OPen</string>
+            </property>
+        </action>
+        <action name="settings_urls">
+            <property name="text">
+                <string>Настроить ссылки</string>
+            </property>
+        </action>
+        <action name="action_setting_names">
+            <property name="text">
+                <string>Настройка</string>
+            </property>
+        </action>
+        <action name="settings_name_conf">
+            <property name="text">
+                <string>Настроить названия предметов</string>
+            </property>
+        </action>
+        <action name="action">
+            <property name="text">
+                <string>Настроить ссылки</string>
+            </property>
+        </action>
+        <action name="action_2">
+            <property name="text">
+                <string>Настроить названия предметов</string>
+            </property>
+        </action>
+        <action name="action_4">
+            <property name="text">
+                <string>Создать свой урок</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>pushButton</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>151</x>
+                    <y>39</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>218</x>
+                    <y>45</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_2</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>138</x>
+                    <y>83</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>225</x>
+                    <y>85</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_3</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>157</x>
+                    <y>126</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>230</x>
+                    <y>129</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_4</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>153</x>
+                    <y>162</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>226</x>
+                    <y>167</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_5</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>140</x>
+                    <y>196</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>229</x>
+                    <y>209</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_6</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>144</x>
+                    <y>240</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>228</x>
+                    <y>255</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_7</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>150</x>
+                    <y>281</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>232</x>
+                    <y>296</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_10</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>131</x>
+                    <y>326</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>229</x>
+                    <y>335</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_9</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>155</x>
+                    <y>364</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>227</x>
+                    <y>371</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>pushButton_8</sender>
+            <signal>clicked()</signal>
+            <receiver>ZoomPlus</receiver>
+            <slot>open_conf()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>139</x>
+                    <y>401</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>211</x>
+                    <y>398</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>action</sender>
+            <signal>triggered()</signal>
+            <receiver>ZoomPlus_2</receiver>
+            <slot>show()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>-1</x>
+                    <y>-1</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>124</x>
+                    <y>217</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>action_2</sender>
+            <signal>triggered()</signal>
+            <receiver>ZoomPlus_2</receiver>
+            <slot>show()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>-1</x>
+                    <y>-1</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>124</x>
+                    <y>217</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+    <slots>
+        <signal>signal1()</signal>
+        <slot>open_conf()</slot>
+    </slots>
+</ui>
