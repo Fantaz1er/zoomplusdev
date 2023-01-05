@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-# Form implementation generated from reading ui file 'zoomplus_create_conf.ui'
+# Form implementation generated from reading ui file '.\zoomplus_ui\zoomplus_create_conf.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.0
 #
@@ -9,9 +8,12 @@
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 
+from config import ZoomPlusConfig
+
 
 class UiCreateLessonsWindow(object):
     def __init__(self):
+        self.cfg = ZoomPlusConfig()
         self.statusbar = None
         self.menubar = None
         self.label_2 = None
@@ -19,73 +21,90 @@ class UiCreateLessonsWindow(object):
         self.lineEdit_1 = None
         self.pushButton = None
         self.lineEdit = None
-        self.central_widget = None
+        self.centralwidget = None
 
-    def setup_ui(self, main_window, action=None):
-        main_window.setObjectName("main_window")
-        main_window.setEnabled(True)
-        main_window.resize(240, 320)
-        main_window.setMinimumSize(QtCore.QSize(240, 320))
-        main_window.setMaximumSize(QtCore.QSize(240, 320))
-        main_window.setBaseSize(QtCore.QSize(0, 0))
+    def setup_ui(self, CreateLessonsWindow):
+        CreateLessonsWindow.setObjectName("CreateLessonsWindow")
+        CreateLessonsWindow.setEnabled(True)
+        CreateLessonsWindow.resize(240, 320)
+        CreateLessonsWindow.setMinimumSize(QtCore.QSize(240, 320))
+        CreateLessonsWindow.setMaximumSize(QtCore.QSize(240, 320))
+        CreateLessonsWindow.setBaseSize(QtCore.QSize(0, 0))
         font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        main_window.setFont(font)
-        main_window.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
-        main_window.setStyleSheet("QMainWindow {background-color: #555}")
-        main_window.setLocale(QtCore.QLocale(QtCore.QLocale.Language.Russian, QtCore.QLocale.Country.Russia))
-        self.central_widget = QtWidgets.QWidget(main_window)
-        self.central_widget.setObjectName("central_widget")
-        self.lineEdit = QtWidgets.QLineEdit(self.central_widget)
+        CreateLessonsWindow.setFont(font)
+        CreateLessonsWindow.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
+        CreateLessonsWindow.setStyleSheet("background-color: #22222e; color: white;")
+        CreateLessonsWindow.setLocale(QtCore.QLocale(QtCore.QLocale.Language.Russian, QtCore.QLocale.Country.Russia))
+        self.centralwidget = QtWidgets.QWidget(CreateLessonsWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setEnabled(True)
-        self.lineEdit.setGeometry(QtCore.QRect(60, 60, 110, 20))
+        self.lineEdit.setGeometry(QtCore.QRect(50, 80, 140, 20))
         self.lineEdit.setMinimumSize(QtCore.QSize(0, 0))
-        self.lineEdit.setStyleSheet("QLineEdit {border-radius: 10px; color: white; background-color: #4CAF50; "
-                                    "font-family: Comic Sans MS, sans-serif; font: bold}")
+        self.lineEdit.setStyleSheet(
+            "bachground-color: #22222e;border: 2px solid #f66867;border-radius: 10px;color: white;")
         self.lineEdit.setObjectName("lineEdit")
-        self.pushButton = QtWidgets.QPushButton(self.central_widget)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(80, 275, 75, 25))
         self.pushButton.setMinimumSize(QtCore.QSize(1, 3))
         self.pushButton.setMaximumSize(QtCore.QSize(16777215, 16777208))
-        self.pushButton.setStyleSheet("QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size: "
-                                      "12px;font: bold;text-align: center;font-family: \'Comic Sans MS\', sans-serif "
-                                      ";background-color: #4CAF50} \n "
-                                      "QPushButton:hover{background-color: #fff; color: #000}")
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Black")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("QPushButton {\n"
+                                      "color: white;\n"
+                                      "background-color: #fb5b5d;\n"
+                                      "border-radius: 11px;\n"
+                                      "}\n"
+                                      "\n"
+                                      "QPushButton:pressed {\n"
+                                      "background-color: #fa4244;\n"
+                                      "}")
         self.pushButton.setObjectName("pushButton")
-        self.lineEdit_1 = QtWidgets.QLineEdit(self.central_widget)
-        self.lineEdit_1.setGeometry(QtCore.QRect(60, 150, 113, 20))
-        self.lineEdit_1.setStyleSheet("QLineEdit {border-radius: 10px; color: white; background-color: #4CAF50; "
-                                      "font-family: Comic Sans MS, sans-serif; font: bold}")
+        self.lineEdit_1 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_1.setGeometry(QtCore.QRect(50, 190, 140, 20))
+        self.lineEdit_1.setStyleSheet(
+            "bachground-color: #22222e;border: 2px solid #f66867;border-radius: 10px;color: white;")
+        self.lineEdit_1.setText("")
         self.lineEdit_1.setObjectName("lineEdit_1")
-        self.label_1 = QtWidgets.QLabel(self.central_widget)
+        self.label_1 = QtWidgets.QLabel(self.centralwidget)
         self.label_1.setEnabled(False)
-        self.label_1.setGeometry(QtCore.QRect(90, 125, 45, 10))
-        self.label_1.setStyleSheet("QLabel {color: white; font-family: Comic Sans MS, sans-serif; font: bold}")
+        self.label_1.setGeometry(QtCore.QRect(80, 150, 80, 16))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Black")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.label_1.setFont(font)
         self.label_1.setObjectName("label_1")
-        self.label_2 = QtWidgets.QLabel(self.central_widget)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setEnabled(False)
-        self.label_2.setGeometry(QtCore.QRect(65, 36, 105, 10))
-        self.label_2.setStyleSheet("QLabel {color: white; font-family: Comic Sans MS, sans-serif; font: bold}")
+        self.label_2.setGeometry(QtCore.QRect(30, 40, 190, 20))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Black")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
-        main_window.setCentralWidget(self.central_widget)
-        self.menubar = QtWidgets.QMenuBar(main_window)
+        CreateLessonsWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(CreateLessonsWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 240, 21))
         self.menubar.setObjectName("menubar")
-        main_window.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(main_window)
+        CreateLessonsWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(CreateLessonsWindow)
         self.statusbar.setObjectName("statusbar")
-        main_window.setStatusBar(self.statusbar)
+        CreateLessonsWindow.setStatusBar(self.statusbar)
 
-        self.retranslate_ui(main_window)
-        name = self.lineEdit.textChanged['QString'].connect(action.get_name_lesson)  # type: ignore
-        url = self.lineEdit_1.textChanged['QString'].connect(action.get_url_lesson)  # type: ignore
-        self.pushButton.clicked.connect(lambda: action.create_lesson(name=name, url=url))  # type: ignore
-        # self.pushButton.clicked.connect(lambda: action.create_lesson(name=self.lineEdit.textChanged['QString'].connect(action.get_name_lesson), url=self.lineEdit_1.textChanged['QString'].connect(action.get_url_lesson)))  # type: ignore
-        QtCore.QMetaObject.connectSlotsByName(main_window)
+        self.retranslateUi(CreateLessonsWindow)
+        QtCore.QMetaObject.connectSlotsByName(CreateLessonsWindow)
 
-    def retranslate_ui(self, main_window):
+    def retranslateUi(self, CreateLessonsWindow):
         _translate = QtCore.QCoreApplication.translate
-        main_window.setWindowTitle(_translate("main_window", "Создать свой урок"))
-        self.pushButton.setText(_translate("main_window", "Создать"))
-        self.label_1.setText(_translate("main_window", "Ссылка:"))
-        self.label_2.setText(_translate("main_window", "Название предмета:"))
+        CreateLessonsWindow.setWindowTitle(_translate("CreateLessonsWindow", "Создать свою конференцию"))
+        self.pushButton.setText(_translate("CreateLessonsWindow", "Создать"))
+        self.label_1.setText(_translate("CreateLessonsWindow", "Ссылка:"))
+        self.label_2.setText(_translate("CreateLessonsWindow", "Название конференции:"))

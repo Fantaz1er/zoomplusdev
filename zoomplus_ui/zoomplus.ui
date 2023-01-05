@@ -22,13 +22,18 @@
                 <height>435</height>
             </size>
         </property>
+        <property name="font">
+            <font>
+                <family>Montserrat Black</family>
+                <weight>75</weight>
+                <bold>true</bold>
+            </font>
+        </property>
         <property name="windowTitle">
             <string>MainWindow</string>
         </property>
         <property name="styleSheet">
-            <string notr="true">QMainWindow {background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                stop:0.210227 rgba(253,187,45,1), stop:1 rgba(195,34,34,1));}
-            </string>
+            <string notr="true">background-color: #22222e; color: white;</string>
         </property>
         <widget class="QWidget" name="ZoomPlus_2">
             <property name="maximumSize">
@@ -40,201 +45,321 @@
             <widget class="QPushButton" name="pushButton">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>10</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Математика</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_2">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>50</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Русский яз. (+)</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_3">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>90</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Английский яз.</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_4">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>130</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Информатика</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_5">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>170</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Физика (+)</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_6">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>210</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>История (+)</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_7">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
+                        <x>40</x>
                         <y>250</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>Физ-ра (+)</string>
-                </property>
-            </widget>
-            <widget class="QPushButton" name="pushButton_8">
-                <property name="geometry">
-                    <rect>
-                        <x>80</x>
-                        <y>370</y>
-                        <width>100</width>
-                        <height>20</height>
-                    </rect>
-                </property>
-                <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
-                    </string>
-                </property>
-                <property name="text">
-                    <string>Химия</string>
-                </property>
-            </widget>
-            <widget class="QPushButton" name="pushButton_9">
-                <property name="geometry">
-                    <rect>
-                        <x>80</x>
-                        <y>330</y>
-                        <width>100</width>
-                        <height>20</height>
-                    </rect>
-                </property>
-                <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
-                    </string>
-                </property>
-                <property name="text">
-                    <string>ИП</string>
+                    <string>1</string>
                 </property>
             </widget>
             <widget class="QPushButton" name="pushButton_10">
                 <property name="geometry">
                     <rect>
-                        <x>80</x>
-                        <y>290</y>
-                        <width>100</width>
-                        <height>20</height>
+                        <x>40</x>
+                        <y>370</y>
+                        <width>170</width>
+                        <height>21</height>
                     </rect>
                 </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
                 <property name="styleSheet">
-                    <string notr="true">QPushButton {border-radius: 10px; color: #fff;text-align: center;font-size:
-                        12px;font: bold;text-align: center;font-family: 'Comic Sans MS', sans-serif;}
-                        QPushButton:hover{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                        stop:0.210227 rgba(0, 255, 162, 100), stop:1 rgba(255, 255, 255, 100));}
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
                     </string>
                 </property>
                 <property name="text">
-                    <string>География</string>
+                    <string>1</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_9">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>330</y>
+                        <width>170</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
+                    </string>
+                </property>
+                <property name="text">
+                    <string>1</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_8">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>290</y>
+                        <width>170</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Montserrat Black</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QPushButton {
+                        color: white;
+                        background-color: #fb5b5d;
+                        border-radius: 10px;
+                        }
+
+                        QPushButton:pressed {
+                        background-color: #fa4244;
+                        }
+                    </string>
+                </property>
+                <property name="text">
+                    <string>1</string>
                 </property>
             </widget>
         </widget>
@@ -291,12 +416,12 @@
         </action>
         <action name="action_2">
             <property name="text">
-                <string>Настроить названия предметов</string>
+                <string>Настроить названия</string>
             </property>
         </action>
         <action name="action_4">
             <property name="text">
-                <string>Создать свой урок</string>
+                <string>Создать свою конференцию</string>
             </property>
         </action>
     </widget>
@@ -415,7 +540,7 @@
             </hints>
         </connection>
         <connection>
-            <sender>pushButton_10</sender>
+            <sender>pushButton_8</sender>
             <signal>clicked()</signal>
             <receiver>ZoomPlus</receiver>
             <slot>open_conf()</slot>
@@ -447,7 +572,7 @@
             </hints>
         </connection>
         <connection>
-            <sender>pushButton_8</sender>
+            <sender>pushButton_10</sender>
             <signal>clicked()</signal>
             <receiver>ZoomPlus</receiver>
             <slot>open_conf()</slot>
