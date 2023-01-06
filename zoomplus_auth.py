@@ -1,4 +1,4 @@
-from PyQt6 import QtWidgets, QtGui, QtCore
+from PyQt6 import QtWidgets
 
 from check_db import *
 from zoomplus_py.zoomplusauthui import UiRegistration
@@ -18,7 +18,7 @@ class Interface(QtWidgets.QWidget):
         self.check_db = CheckThread()
         self.check_db.mysignal.connect(self.signal_handler)
 
-        self.main_window = main_window
+        self.main_window = main_window  # Show main window if auth is True
 
     # Check correct input data
     @staticmethod

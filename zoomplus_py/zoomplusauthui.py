@@ -110,8 +110,8 @@ class UiRegistration(object):
 
     def retranslateUi(self, Registration):
         _translate = QtCore.QCoreApplication.translate
-        Registration.setWindowTitle(_translate("Registration", "Authorization"))
-        self.lineEdit.setPlaceholderText(_translate("Registration", "Login..."))
-        self.lineEdit_2.setPlaceholderText(_translate("Registration", "Password..."))
-        self.pushButton.setText(_translate("Registration", "Sign In"))
-        self.pushButton_2.setText(_translate("Registration", "Sign Up"))
+        Registration.setWindowTitle(_translate("Registration", "Авторизация"))
+        self.lineEdit.setPlaceholderText(_translate("Registration", "Логин..."))
+        self.lineEdit_2.setPlaceholderText(_translate("Registration", "Пароль..."))
+        self.pushButton.setText(_translate("Registration", "Войти"))
+        self.pushButton_2.setText(_translate("Registration", "Авторизоваться"))

@@ -1,7 +1,8 @@
 import sqlite3
 
 
-def login(log, password, signal) -> bool:
+def login(log: str, password: str, signal) -> bool:
+    successful_auth = False
     con = sqlite3.connect('handler/users.db')
     cur = con.cursor()
 
@@ -9,18 +10,19 @@ def login(log, password, signal) -> bool:
     value = cur.fetchall()
 
     if value and value[0][2] == password:
+        successful_auth = True
         signal.emit("Успешная авторизация!")
-        cur.close()
-        con.close()
-        return True
     else:
         signal.emit('Проверьте правильность ввода данных!')
-        cur.close()
-        con.close()
-        return False
+
+    cur.close()
+    con.close()
+
+    return successful_auth
 
 
-def register(log, password, signal) -> bool:
+def register(log: str, password: str, signal) -> bool:
+    successful_auth = False
     con = sqlite3.connect('handler/users.db')
     cur = con.cursor()
 
@@ -29,13 +31,13 @@ def register(log, password, signal) -> bool:
 
     if value:
         signal.emit('Пользователь под таким никнеймом уже существует!')
-        cur.close()
-        con.close()
-        return True
     else:
+        successful_auth = True
         cur.execute(f"INSERT INTO users (login, password) VALUES ('{log}', '{password}');")
         signal.emit('Успешная регистрация!')
         con.commit()
-        cur.close()
-        con.close()
-        return False
+
+    cur.close()
+    con.close()
+
+    return successful_auth

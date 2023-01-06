@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
-import os
 import webbrowser
 from json import load, dump
+from requests import get
 
-assets_tmp: str = rf'{os.getenv("tmp")}\assets'
-data_tmp: str = rf'{os.getenv("tmp")}\assets\data.json'
-lessons_tmp: str = rf'{os.getenv("tmp")}\assets\lessons.json'
+from os import getenv, mkdir
+from os.path import exists
+
+# file path
+assets_tmp: str = rf'{getenv("tmp")}\assets'
+data_tmp: str = rf'{assets_tmp}\\data.json'
+lessons_tmp: str = rf'{assets_tmp}\\lessons.json'
+favicon_tmp: str = rf'{assets_tmp}\\favicon.png'
 
 
 class ZoomPlusConfig:
@@ -29,6 +34,21 @@ class ZoomPlusConfig:
             {"name_conf": "География",
              "url": "https://us05web.zoom.us/j/4544548111?pwd=VGhtcFl1OW14eTBreU9ULzByc2VYUT09"}
         ]
+        # Setting files app
+        if not exists(assets_tmp):
+            mkdir(assets_tmp)
+            self.create_data()
+        elif not exists(data_tmp):
+            self.create_data()
+        elif not exists(lessons_tmp):
+            self.create_lesson_data()
+        # Icon app:
+        if not exists(favicon_tmp):
+            response = get(url='https://cdn.icon-icons.com/icons2/2428/PNG/512/zoom_black_logo_icon_147040.png',
+                           allow_redirects=True)
+            open(favicon_tmp, 'wb').write(response.content)
+
+    # UPDATE 0.1 -> 1.0
 
     def create_data(self, data_update=None):
         if data_update is None:
@@ -65,6 +85,8 @@ class ZoomPlusConfig:
         data_read = self.read_data_conf()
         data_read[index]['url'] = value
         self.create_data(data_read)
+
+    # UPDATE 1.1
 
     def create_lesson(self, name: str, url: str):
         self.create_lesson_data({'conf': name, 'url': url})
